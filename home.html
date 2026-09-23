@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Blog Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+  
+.header {
+   position: relative;
+   height: 270px;
+   background-image: url("images/header.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  border-radius: 0;
+}
+.nav-bottom {
+  bottom: -270px;
+}
+  
+</style>
+</head>
+<body>
+</body>
+<div class="header">
+            <!--the navigation menu-->
+        <nav class="navbar navbar-inverse nav-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  
+                    <!--transforms navigation menu when page is resized-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--end of transforms.. -->
+                  
+                    <a class="navbar-brand" href="#">My Blogging Site</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">January 2021</a></li>
+                                <li><a href="#">February 2021</a></li>
+                                <li><a href="#">March 2021</a></li>
+                                <li><a href="#">April 2021</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">About Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--end of navigation menu-->
+</div>
+</html>

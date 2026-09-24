@@ -1,72 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>My Blog Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <style>
-  
-.header {
-   position: relative;
-   height: 270px;
-   background-image: url("images/header.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100%;
-}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
 
-body {
-  margin: 0;
-  padding: 0;
-}
-.navbar {
-  border-radius: 0;
-}
-.nav-bottom {
-  bottom: -270px;
-}
-  
-</style>
 </head>
 <body>
-</body>
-<div class="header">
-            <!--the navigation menu-->
-        <nav class="navbar navbar-inverse nav-bottom">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                  
-                    <!--transforms navigation menu when page is resized-->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--end of transforms.. -->
-                  
-                    <a class="navbar-brand" href="#">My Blogging Site</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">January 2021</a></li>
-                                <li><a href="#">February 2021</a></li>
-                                <li><a href="#">March 2021</a></li>
-                                <li><a href="#">April 2021</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">About Me</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <a href="#" class="logo">Zeke.dev</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <!--end of navigation menu-->
-</div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <p class ="intro">Creative and Passionate</p>
+        <h1>Zeke Pulido</h1>
+        <p class = "title">Software/Web Developer</p>
+        <a href="#projects">View My Projects</a>
+    </section>
+        
+    <section id="about">
+    <div class="about-card">
+        <h2>About Me</h2>
+        <p>I am currently a Missionary Teacher in the Bronx that loves coding and food!</p>
+        <h3>Skills</h3>
+        <ul class="skills">
+        <li class="electric">C++</li>
+        <li class="water">Python</li>
+        <li class="fire">Java</li>
+        <li class="grass">Scala</li>
+        <li class="water">Flutter</li>
+        <li class="electric">Firebase</li>
+    </ul>
+    </div>
+    </section>
+
+    <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>BarBuzz</h3>
+            <p>A Bar app built with Flutter and Firebase.</p>
+            <ul class="project-tech">
+                <li>Flutter</li>
+                <li>Firebase</li>
+                <li>Stripe</li>
+            </ul>
+            <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Pixel PowerLift</h3>
+            <p>A retro RPG-inspired workout tracking app built with SwiftUI and Firebase.</p>
+            <ul class="project-tech">
+                <li>SwiftUI</li>
+                <li>Firebase</li>
+            </ul>
+            <a href="#">View Project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Dawg Social</h3>
+            <p>A school social media application built with Django.</p>
+            <ul class="project-tech">
+                <li>Django</li>
+                <li>Python</li>
+            </ul>
+            <a href="#">View Project →</a>
+        </div>
+    </div>
+</section>
+
+<section id="blog">
+    <h2>Blog</h2>
+
+    <div class="blog-container">
+        <article class="blog-card">
+            <h3>What I Learned Building SideLine</h3>
+            <p>
+                A look at what I learned while building a marketplace
+                application with Flutter and Firebase.
+            </p>
+            <a href="#">Read More →</a>
+        </article>
+
+        <article class="blog-card">
+            <h3>Getting Started with SwiftUI</h3>
+            <p>
+                My experience learning SwiftUI while building
+                Pixel PowerLift.
+            </p>
+            <a href="#">Read More →</a>
+        </article>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        Interested in working together or just want to say hello?
+    </p>
+
+    <a href="mailto:your-email@example.com">Email Me</a>
+</section>
+
+</main>
+
+<footer>
+</footer>
+</body>
 </html>
+

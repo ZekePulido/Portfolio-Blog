@@ -1,0 +1,364 @@
+body {
+    background-color: #090b16;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header {
+    background-color: #10111f;
+    border-bottom: 3px solid #F8D030;
+}
+
+#about h2,
+#projects h2,
+#blog h2,
+#contact h2 {
+    text-align: center;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul a {
+    padding: 8px 10px;
+    transition: 0.3s;
+    border-bottom: 2px solid #F08030;
+}
+
+nav ul a:hover {
+    color: #F8D030;
+    background-color: #10111f;
+    border-radius: 6px;
+    border-bottom: 2px solid #F8D030;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a:hover{
+    color: #F8D030;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F8D030;
+    font-family: "Press Start 2P", sans-serif;
+    text-shadow: 0 0 4px #F8D030;
+}
+
+.logo:hover {
+    color: #F08030;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    gap: 10px
+}
+
+.hero .intro {
+    font-size: 10px;
+    color: #F8D030;
+    letter-spacing: 2px;
+}
+
+.hero .title {
+    font-size: 20px;
+    color: #F08030;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 6px #F8D030;
+}
+
+.hero p {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.hero a {
+    background-color: #F8D030;
+    color: #090b16;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.hero a:hover {
+    background-color: #F08030;
+    color: black
+}
+
+#about {
+    padding: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 2px solid #F8D030;
+}
+
+#about::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #F8D030;
+    margin: 0 auto 40px;
+}
+
+.about-card {
+    background-color: #10111f;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #F8D030;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #090b16;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #F8D030;
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    transform: scale(1.05);
+}
+
+.skills .electric {
+    border-color: #F8D030;
+    color: #F8D030;
+}
+
+.skills .water {
+    border-color: #6890F0;
+    color: #6890F0;
+}
+
+.skills .fire {
+    border-color: #F08030;
+    color: #F08030;
+}
+
+.skills .grass {
+    border-color: #78C850;
+    color: #78C850;
+}
+
+.skills li:hover {
+    background-color: #F8D030;
+    color: #090b16;
+}
+
+.skills .electric:hover {
+    background-color: #F8D030;
+    color: #090b16;
+}
+
+.skills .water:hover {
+    background-color: #6890F0;
+    color: #090b16;
+}
+
+.skills .fire:hover {
+    background-color: #F08030;
+    color: #090b16;
+}
+
+.skills .grass:hover {
+    background-color: #78C850;
+    color: #090b16;
+}
+
+#projects {
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-card,
+.blog-card {
+    background-color: #10111f;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #F8D030;
+    border-top: 4px solid #F8D030;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card h3 {
+    color: #F8D030;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+}
+
+.project-card p {
+    color: whitesmoke;
+    line-height: 1.6;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card a {
+    color: #F8D030;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.project-card a:hover {
+    color: #F08030;
+}
+
+.project-tech {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.project-tech li {
+    font-size: 12px;
+    color: #F8D030;
+    border: 1px solid #F8D030;
+    padding: 5px 8px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+#blog {
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #10111f;
+}
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card a {
+    margin-top: auto;
+}
+
+.blog-card h3 {
+    color: #F8D030;
+    font-size: 16px;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.blog-card p {
+    color: whitesmoke;
+    line-height: 1.6;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+#contact {
+    padding: 80px 60px;
+    border-top: 2px solid #F8D030;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #F8D030;
+    color: #090b16;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    background-color: #F08030;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}

@@ -1,41 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Zeke | Resume</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zeke Pulido | Resume</title>
+    <meta name="description" content="Resume of Zeke Pulido, a software developer focused on modern product and app development." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Zeke.dev</a>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+    <header class="site-header">
+        <nav class="nav container">
+            <a href="home.html" class="logo">Zeke.dev</a>
+            <ul class="nav-links">
+                <li><a href="home.html#about">About</a></li>
+                <li><a href="home.html#projects">Projects</a></li>
+                <li><a href="home.html#insights">Insights</a></li>
+                <li><a href="home.html#contact">Contact</a></li>
             </ul>
-
-            <button id="theme-button">Light Mode</button>
         </nav>
     </header>
 
     <main>
-        <section class="resume">
-            <h1>My Resume</h1>
+        <section class="page-header">
+            <div class="container narrow">
+                <p class="eyebrow">Resume</p>
+                <h1>Zeke Pulido</h1>
+            </div>
+        </section>
 
-            <p>
-                Software developer focused on building applications,
-                backend systems, and learning new technologies.
-            </p>
+        <section class="section">
+            <div class="container narrow">
+                <div class="resume-layout">
+                    <article class="resume-card">
+                        <div class="resume-item">
+                            <h2>Software Developer</h2>
+                            <p>
+                                Product-minded developer focused on building modern digital experiences for mobile and web.
+                                I enjoy turning complex problems into thoughtful, polished products that feel intuitive and work reliably.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h3>Core Skills</h3>
+                            <ul>
+                                <li>Flutter, SwiftUI, Firebase, Python, Django</li>
+                                <li>Product thinking and user-focused design</li>
+                                <li>Frontend and full-stack web implementation</li>
+                                <li>Research, iteration, and product iteration</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <h3>Experience</h3>
+                            <p class="meta">Product & App Development</p>
+                            <p>
+                                Built and shipped mobile and web experiences across social, fitness, and product-focused applications,
+                                working from concept through implementation and polish.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <h3>Education</h3>
+                            <p class="meta">Software Engineering</p>
+                            <p>Focused on software design, usability, and building practical technical solutions.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Zeke Pulido</p>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

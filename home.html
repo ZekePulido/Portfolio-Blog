@@ -2,169 +2,230 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>My Blog Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zeke Pulido | Portfolio</title>
+    <meta
+        name="description"
+        content="Portfolio of Zeke Pulido, a software developer focused on building modern mobile and web experiences."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo">Zeke.dev</a>
-            <ul>
+    <header class="site-header">
+        <nav class="nav container">
+            <a href="#top" class="logo">Zeke.dev</a>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#insights">Insights</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-button">Light Mode</button>
         </nav>
-</header>
+    </header>
 
-<main>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <div class="trainer-chip">
+                        <span class="chip-dot"></span>
+                        Trainer ID #022
+                    </div>
+                    <p class="eyebrow">Software Developer • Missionary Teacher</p>
+                    <h1>Zeke Pulido</h1>
+                    <p class="subtitle">
+                        I love creating new things that make life easier! I have experience with mobile apps and web apps!
+                    </p>
 
-    <section class="hero">
-        <p class ="intro">Creative and Passionate</p>
-        <h1>Zeke Pulido</h1>
-        <p class = "title">Software/Web Developer</p>
-        <a href="#projects" class="button">View My Projects</a>
-        <div class="hero-runner">
-            <div class="sprite"></div>
-        </div>
-    </section>
-        
-    <section id="about">
-        <div class="about-card">
-            <h2>About Me</h2>
+                    <div class="hero-actions">
+                        <a href="#projects" class="button primary">View Projects</a>
+                        <a href="resume.html" class="button secondary">Resume</a>
+                    </div>
 
-            <p>
-                I'm a Software Engineering graduate with a passion for
-                building applications and solving problems through code.
-                I enjoy working across backend and full-stack development
-                and learning new technologies.
-            </p>
+                    <ul class="hero-metrics" aria-label="Key statistics">
+                        <li><strong>3+</strong><span>Years building apps</span></li>
+                        <li><strong>4+</strong><span>Applications created</span></li>
+                        <li><strong>Full-stack</strong><span>Mobile + Web</span></li>
+                    </ul>
+                </div>
 
-            <a href="resume.html" class="button">View My Resume</a>
-        </div>
-    </section>
+                <div class="hero-visual" aria-label="Portfolio summary">
+                    <div class="profile-panel">
+                        <div class="profile-badge">Trainer Profile</div>
+                        <img
+                            src="images/trainer.png"
+                            alt="Pokémon trainer illustration"
+                            class="trainer-art"
+                        />
+                        <div class="profile-details">
+                            <span>Favorite field</span>
+                            <strong>App Development</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-filters">
-        <button class="filter-button active" data-filter="all">All</button>
-        <button class="filter-button" data-filter="flutter">Flutter</button>
-        <button class="filter-button" data-filter="firebase">Firebase</button>
-        <button class="filter-button" data-filter="swiftui">SwiftUI</button>
-        <button class="filter-button" data-filter="stripe">Stripe</button>
-        <button class="filter-button" data-filter="django">Django</button>
-        <button class="filter-button" data-filter="python">Python</button>
-    </div>
-        <div class="projects-container">
-            <div class="project-card" data-technologies="flutter firebase stripe">
-                <img
-                    src="images/Barbuzz.png"
-                    alt="Screenshot of the Barbuzz application"
-                    class="project-image"
-                >
-                <h3>BarBuzz</h3>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Building applications with passion</h2>
+                </div>
 
+                <div class="about-grid">
+                    <div class="about-card">
+                        <p>
+                            I’m a Software Engineering graduate with a passion for creating meaningful
+                            digital experiences. I enjoy turning complex ideas into clean, user-focused
+                            products and collaborating across frontend, mobile, and backend work.
+                        </p>
+                        <p>
+                            My work blends product thinking with technical execution, whether I’m
+                            prototyping an app, improving system architecture, or polishing the user
+                            experience.
+                        </p>
+                        <a href="resume.html" class="button secondary">View My Resume</a>
+                    </div>
+
+                    <div class="about-card accent-card">
+                        <h3>Core strengths</h3>
+                        <ul class="skill-list" aria-label="Skills list">
+                            <li>Flutter</li>
+                            <li>SwiftUI</li>
+                            <li>Firebase</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Web Design</li>
+                            <li>UI/UX</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Projects that combine product thinking with technical execution.</h2>
+                </div>
+
+                <div class="project-filters" aria-label="Project filters">
+                    <button class="filter-button active" type="button" data-filter="all">All</button>
+                    <button class="filter-button" type="button" data-filter="flutter">Flutter</button>
+                    <button class="filter-button" type="button" data-filter="firebase">Firebase</button>
+                    <button class="filter-button" type="button" data-filter="swiftui">SwiftUI</button>
+                    <button class="filter-button" type="button" data-filter="stripe">Stripe</button>
+                    <button class="filter-button" type="button" data-filter="django">Django</button>
+                    <button class="filter-button" type="button" data-filter="python">Python</button>
+                </div>
+
+                <div class="projects-container">
+                    <article class="project-card" data-technologies="flutter firebase stripe">
+                        <img src="images/Barbuzz.png" alt="BarBuzz application screenshot" class="project-image" />
+                        <div class="project-content">
+                            <h3>BarBuzz</h3>
+                            <p>
+                                A social discovery app for finding drinks, events, and music in a simple,
+                                engaging experience.
+                            </p>
+                            <ul class="project-tech">
+                                <li>Flutter</li>
+                                <li>Firebase</li>
+                                <li>Stripe</li>
+                            </ul>
+                            <p class="project-role">Built the mobile experience, backend integration, and payment flow.</p>
+                            <a href="https://github.com/ZekePulido/BarBuzz" target="_blank" rel="noopener noreferrer">View project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-technologies="swiftui firebase">
+                        <img src="images/PixelPowerlift.png" alt="Pixel PowerLift application screenshot" class="project-image" />
+                        <div class="project-content">
+                            <h3>Pixel PowerLift</h3>
+                            <p>A retro-inspired fitness tracker designed to make exercise planning feel rewarding and approachable.</p>
+                            <ul class="project-tech">
+                                <li>SwiftUI</li>
+                                <li>Firebase</li>
+                            </ul>
+                            <p class="project-role">Designed the app interface and built the data layer for workout tracking.</p>
+                            <a href="#" aria-label="Pixel PowerLift project">View project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-technologies="django python">
+                        <img src="images/frogButterfly.png" alt="Dawg Social application screenshot" class="project-image" />
+                        <div class="project-content">
+                            <h3>Dawg Social</h3>
+                            <p>A school-focused social platform built to help communities connect, share updates, and collaborate.</p>
+                            <ul class="project-tech">
+                                <li>Django</li>
+                                <li>Python</li>
+                            </ul>
+                            <p class="project-role">Developed the interface and core social experience for a collaborative web app.</p>
+                            <a href="https://github.com/ZekePulido/IndependentLearningApp" target="_blank" rel="noopener noreferrer">View project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="insights" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Insights</p>
+                    <h2>What I am currently up to! Whether it be from learning, exploring, or trying new things!</h2>
+                </div>
+
+                <div class="blog-container">
+                    <article class="blog-card">
+                        <span class="meta-tag">Exploring</span>
+                        <h3>What I did while in new york in September</h3>
+                        <p>
+                            A look into my exploration of the Big Apple
+                        </p>
+                        <a href="#">Read more →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <span class="meta-tag">Development</span>
+                        <h3>Getting started with SwiftUI</h3>
+                        <p>
+                            Why I chose SwiftUI and how I am implementing it.
+                        </p>
+                        <a href="#">Read more →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container contact-box">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s build something meaningful.</h2>
                 <p>
-                    A social app for discovering drinks, music, and events.
+                    I’m open to product engineering opportunities, collaboration, and conversations about building thoughtful digital experiences.
                 </p>
+                <div class="contact-actions">
+                    <a href="mailto:hello@zeke.dev" class="button primary">Email Me</a>
+                    <a href="https://github.com/ZekePulido" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                <ul class="project-tech">
-                    <li>Flutter</li>
-                    <li>Firebase</li>
-                    <li>Stripe</li>
-                </ul>
-
-                <p class="project-role">
-                    Built the mobile UI, Firebase backend, and payment functionality.
-                </p>
-
-                <a href="https://github.com/ZekePulido/BarBuzz" target="_blank" rel="noopener noreferrer"> View Project →</a>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Zeke Pulido</p>
         </div>
+    </footer>
 
-        <div class="project-card" data-technologies="swiftui firebase">
-            <img
-                src="images/PixelPowerlift.png"
-                alt="Screenshot of the PixelPowerlift application"
-                class="project-image"
-            >
-            <h3>Pixel PowerLift</h3>
-            <p>A retro RPG-inspired workout tracking app built with SwiftUI and Firebase.</p>
-            <ul class="project-tech">
-                <li>SwiftUI</li>
-                <li>Firebase</li>
-            </ul>
-            <p class="project-role">
-                    Built the mobile UI and Firebase backend.
-            </p>
-            <a href="#">View Project →</a>
-        </div>
-
-        <div class="project-card" data-technologies="django python">
-            <img
-                src="images/frogButterfly.png"
-                alt="Screenshot of the PixelPowerlift application"
-                class="project-image"
-            >
-            <h3>Dawg Social</h3>
-            <p>A school social media application built with Django.</p>
-            <ul class="project-tech">
-                <li>Django</li>
-                <li>Python</li>
-            </ul>
-            <p class="project-role">
-                    Built the UI and Firebase backend.
-            </p>
-            <a href="https://github.com/ZekePulido/IndependentLearningApp" target="_blank" rel="noopener noreferrer">View Project →</a>
-        </div>
-    </div>
-</section>
-
-<section id="blog">
-    <h2>Blog</h2>
-
-    <div class="blog-container">
-        <article class="blog-card">
-            <h3>What I Learned Building SideLine</h3>
-            <p>
-                A look at what I learned while building a marketplace
-                application with Flutter and Firebase.
-            </p>
-            <a href="#">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-            <h3>Getting Started with SwiftUI</h3>
-            <p>
-                My experience learning SwiftUI while building
-                Pixel PowerLift.
-            </p>
-            <a href="#">Read More →</a>
-        </article>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p>
-        Interested in working together or just want to say hello?
-    </p>
-
-    <a href="mailto:your-email@example.com" class="button">Email Me</a>
-</section>
-
-</main>
-
-<footer>
-</footer>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

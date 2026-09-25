@@ -20,6 +20,7 @@
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-button">Light Mode</button>
         </nav>
 </header>
 
@@ -29,58 +30,98 @@
         <p class ="intro">Creative and Passionate</p>
         <h1>Zeke Pulido</h1>
         <p class = "title">Software/Web Developer</p>
-        <a href="#projects">View My Projects</a>
+        <a href="#projects" class="button">View My Projects</a>
+        <div class="hero-runner">
+            <div class="sprite"></div>
+        </div>
     </section>
         
     <section id="about">
-    <div class="about-card">
-        <h2>About Me</h2>
-        <p>I am currently a Missionary Teacher in the Bronx that loves coding and food!</p>
-        <h3>Skills</h3>
-        <ul class="skills">
-        <li class="electric">C++</li>
-        <li class="water">Python</li>
-        <li class="fire">Java</li>
-        <li class="grass">Scala</li>
-        <li class="water">Flutter</li>
-        <li class="electric">Firebase</li>
-    </ul>
-    </div>
+        <div class="about-card">
+            <h2>About Me</h2>
+
+            <p>
+                I'm a Software Engineering graduate with a passion for
+                building applications and solving problems through code.
+                I enjoy working across backend and full-stack development
+                and learning new technologies.
+            </p>
+
+            <a href="resume.html" class="button">View My Resume</a>
+        </div>
     </section>
 
     <section id="projects">
     <h2>Projects</h2>
+    <div class="project-filters">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="flutter">Flutter</button>
+        <button class="filter-button" data-filter="firebase">Firebase</button>
+        <button class="filter-button" data-filter="swiftui">SwiftUI</button>
+        <button class="filter-button" data-filter="stripe">Stripe</button>
+        <button class="filter-button" data-filter="django">Django</button>
+        <button class="filter-button" data-filter="python">Python</button>
+    </div>
+        <div class="projects-container">
+            <div class="project-card" data-technologies="flutter firebase stripe">
+                <img
+                    src="images/Barbuzz.png"
+                    alt="Screenshot of the Barbuzz application"
+                    class="project-image"
+                >
+                <h3>BarBuzz</h3>
 
-    <div class="projects-container">
-        <div class="project-card">
-            <h3>BarBuzz</h3>
-            <p>A Bar app built with Flutter and Firebase.</p>
-            <ul class="project-tech">
-                <li>Flutter</li>
-                <li>Firebase</li>
-                <li>Stripe</li>
-            </ul>
-            <a href="#">View Project →</a>
+                <p>
+                    A social app for discovering drinks, music, and events.
+                </p>
+
+                <ul class="project-tech">
+                    <li>Flutter</li>
+                    <li>Firebase</li>
+                    <li>Stripe</li>
+                </ul>
+
+                <p class="project-role">
+                    Built the mobile UI, Firebase backend, and payment functionality.
+                </p>
+
+                <a href="https://github.com/ZekePulido/BarBuzz" target="_blank" rel="noopener noreferrer"> View Project →</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-technologies="swiftui firebase">
+            <img
+                src="images/PixelPowerlift.png"
+                alt="Screenshot of the PixelPowerlift application"
+                class="project-image"
+            >
             <h3>Pixel PowerLift</h3>
             <p>A retro RPG-inspired workout tracking app built with SwiftUI and Firebase.</p>
             <ul class="project-tech">
                 <li>SwiftUI</li>
                 <li>Firebase</li>
             </ul>
+            <p class="project-role">
+                    Built the mobile UI and Firebase backend.
+            </p>
             <a href="#">View Project →</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-technologies="django python">
+            <img
+                src="images/frogButterfly.png"
+                alt="Screenshot of the PixelPowerlift application"
+                class="project-image"
+            >
             <h3>Dawg Social</h3>
             <p>A school social media application built with Django.</p>
             <ul class="project-tech">
                 <li>Django</li>
                 <li>Python</li>
             </ul>
-            <a href="#">View Project →</a>
+            <p class="project-role">
+                    Built the UI and Firebase backend.
+            </p>
+            <a href="https://github.com/ZekePulido/IndependentLearningApp" target="_blank" rel="noopener noreferrer">View Project →</a>
         </div>
     </div>
 </section>
@@ -116,13 +157,14 @@
         Interested in working together or just want to say hello?
     </p>
 
-    <a href="mailto:your-email@example.com">Email Me</a>
+    <a href="mailto:your-email@example.com" class="button">Email Me</a>
 </section>
 
 </main>
 
 <footer>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
 

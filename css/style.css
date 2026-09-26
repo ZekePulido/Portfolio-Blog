@@ -141,44 +141,6 @@ button {
     border-top: 1px solid var(--line);
 }
 
-.hero-inner {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    align-items: center;
-    gap: 36px;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-copy {
-    display: grid;
-    gap: 8px;
-}
-
-.trainer-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    width: fit-content;
-    padding: 7px 12px;
-    border: 1px solid rgba(215, 167, 84, 0.22);
-    background: var(--accent-soft);
-    border-radius: 999px;
-    color: var(--accent);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08rem;
-    text-transform: uppercase;
-}
-
-.chip-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 0 4px rgba(215, 167, 84, 0.12);
-}
-
 .eyebrow {
     display: inline-block;
     margin: 0;
@@ -200,7 +162,6 @@ button {
     vertical-align: middle;
 }
 
-.hero h1,
 .section-heading h2,
 .page-header h1,
 .contact-box h2,
@@ -208,21 +169,6 @@ button {
     font-family: "Press Start 2P", sans-serif;
 }
 
-.hero h1 {
-    margin: 0;
-    font-size: clamp(2.3rem, 5vw, 4.6rem);
-    line-height: 1.2;
-    color: var(--text-strong);
-}
-
-.subtitle {
-    max-width: 620px;
-    margin: 0;
-    font-size: clamp(1.05rem, 2vw, 1.3rem);
-    color: var(--muted);
-}
-
-.hero-actions,
 .contact-actions {
     display: flex;
     align-items: center;
@@ -263,110 +209,6 @@ button {
 .button.secondary:hover {
     border-color: rgba(215, 167, 84, 0.5);
     background: rgba(215, 167, 84, 0.06);
-}
-
-.hero-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
-    gap: 16px;
-    margin: 34px 0 0;
-    padding: 0;
-    list-style: none;
-}
-
-.hero-metrics li {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 18px 16px;
-}
-
-.hero-metrics strong,
-.hero-metrics span {
-    display: block;
-}
-
-.hero-metrics strong {
-    color: var(--text-strong);
-    font-size: 1.1rem;
-}
-
-.hero-metrics span {
-    margin-top: 6px;
-    color: var(--muted);
-    font-size: 0.82rem;
-}
-
-.hero-visual {
-    position: relative;
-    display: grid;
-    place-items: center;
-    min-height: 340px;
-}
-
-.profile-panel {
-    position: relative;
-    width: min(100%, 360px);
-    padding: 20px 20px 18px;
-    background: linear-gradient(180deg, rgba(20, 29, 42, 0.98), rgba(15, 22, 30, 0.92));
-    border: 1px solid var(--line);
-    border-radius: 24px;
-    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
-    overflow: hidden;
-}
-
-.profile-panel::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(215, 167, 84, 0.08), transparent 35%, rgba(255, 255, 255, 0.02));
-    pointer-events: none;
-}
-
-.profile-badge {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    background: var(--accent-soft);
-    border: 1px solid rgba(215, 167, 84, 0.3);
-    color: var(--accent);
-    border-radius: 999px;
-    padding: 7px 12px;
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.08rem;
-    text-transform: uppercase;
-}
-
-.trainer-art {
-    position: relative;
-    display: block;
-    width: 180px;
-    margin: 18px auto 12px;
-    image-rendering: pixelated;
-    filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.35));
-    z-index: 1;
-}
-
-.profile-details {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    gap: 4px;
-    text-align: center;
-    padding-top: 6px;
-}
-
-.profile-details span {
-    color: var(--muted);
-    font-size: 0.72rem;
-    letter-spacing: 0.08rem;
-    text-transform: uppercase;
-}
-
-.profile-details strong {
-    color: var(--text-strong);
-    font-size: 0.98rem;
 }
 
 .section-heading {
@@ -928,19 +770,10 @@ button {
 }
 
 @media (max-width: 900px) {
-    .hero-inner,
     .about-grid,
     .projects-container,
     .blog-container {
         grid-template-columns: 1fr;
-    }
-
-    .hero-visual {
-        justify-items: center;
-    }
-
-    .small-card {
-        justify-self: center;
     }
 }
 

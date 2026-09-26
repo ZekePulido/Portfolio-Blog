@@ -775,6 +775,26 @@ button {
     .blog-container {
         grid-template-columns: 1fr;
     }
+
+    .trainer-card {
+        padding: 20px;
+    }
+
+    .trainer-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .trainer-identity {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .trainer-info {
+        width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -789,23 +809,23 @@ button {
         justify-content: center;
     }
 
+    .nav-links a {
+        padding: 8px 10px;
+    }
+
     .section {
         padding: 72px 0;
     }
 
     .hero {
         padding-top: 48px;
-    }
-
-    .hero-metrics {
-        grid-template-columns: 1fr;
+        padding-bottom: 64px;
     }
 
     .button {
         width: 100%;
     }
 
-    .hero-actions,
     .contact-actions {
         flex-direction: column;
         align-items: stretch;
@@ -819,17 +839,65 @@ button {
         padding-right: 20px;
     }
 
-    .trainer-identity {
-    flex-direction: column;
-    text-align: center;
+    .project-filters {
+        gap: 8px;
+    }
+
+    .filter-button {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 0;
+    }
+
+    .trainer-card {
+        padding: 18px 16px;
+    }
+
+    .trainer-header {
+        font-size: 0.6rem;
+    }
+
+    .trainer-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .trainer-info h1 {
+        font-size: clamp(1.1rem, 7vw, 1.8rem);
+    }
+
+    .trainer-skills {
+        justify-content: center;
+    }
+
+    .skill-badge {
+        font-size: 0.5rem;
+    }
+
+    .blog-card,
+    .project-content,
+    .about-card {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 }
 
-.trainer-image {
-    width: 130px;
-    height: 130px;
-}
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 20px, 1120px);
+    }
 
-.trainer-skills {
-    justify-content: center;
-}
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links li {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+
+    .section-heading h2,
+    .contact-box h2,
+    .page-header h1 {
+        font-size: clamp(1.2rem, 6vw, 1.8rem);
+    }
 }

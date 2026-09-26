@@ -342,6 +342,39 @@ button {
     gap: 22px;
 }
 
+#projects-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 144, 240, 0.25);
+}
+
+#projects-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(99, 144, 240, 0.2);
+}
+
+#projects-button::before {
+    content: "▶";
+
+    margin-right: 8px;
+
+    color: #6390F0;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#projects-button:hover::before {
+    opacity: 1;
+}
+
 .project-card {
     overflow: hidden;
 

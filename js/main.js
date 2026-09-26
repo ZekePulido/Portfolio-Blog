@@ -1,8 +1,34 @@
-const projectsButton = document.querySelector(".hero .button.primary");
+const projectsButton = document.querySelector("#projects-button");
 const projectsSection = document.querySelector("#projects");
 const navLinks = document.querySelectorAll('a[href^="#"]');
 const filterButtons = document.querySelectorAll(".filter-button");
 const projectCards = document.querySelectorAll(".project-card");
+const skillBadges = document.querySelectorAll(".skill-badge");
+const skillDescription = document.querySelector(".skill-description");
+const skillName = document.querySelector("#skill-name");
+const skillText = document.querySelector("#skill-text");
+
+const skillInfo = {
+    cpp: {
+        name: "C++",
+        description: "Used for systems programming, problem solving, and application development."
+    },
+
+    python: {
+        name: "Python",
+        description: "Used for backend development, automation, testing, and data-focused projects."
+    },
+
+    java: {
+        name: "Java",
+        description: "Used for backend services, APIs, and application development."
+    },
+
+    scala: {
+        name: "Scala",
+        description: "Used for backend services and building scalable applications."
+    }
+};
 
 function scrollToSection(section) {
     if (!section) return;
@@ -48,3 +74,21 @@ if (filterButtons.length && projectCards.length) {
         });
     });
 }
+
+skillBadges.forEach(function(badge) {
+    badge.addEventListener("click", function() {
+        const selectedSkill = badge.dataset.skill;
+
+        skillBadges.forEach(function(skillBadge) {
+            skillBadge.classList.remove("selected");
+        });
+
+        badge.classList.add("selected");
+
+        const skill = skillInfo[selectedSkill];
+
+        skillName.textContent = "▶ " + skill.name;
+        skillText.textContent = skill.description;
+            });
+
+});

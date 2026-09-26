@@ -680,6 +680,43 @@ button {
         inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
+.skill-description {
+    margin-top: 16px;
+    padding: 14px 16px;
+
+    background: rgba(99, 144, 240, 0.08);
+
+    border: 1px solid rgba(99, 144, 240, 0.35);
+    border-radius: 8px;
+
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.skill-description span {
+    color: #6390F0;
+}
+
+.skill-description h4 {
+    margin: 0 0 8px;
+    color: #6390F0;
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.65rem;
+    line-height: 1.6;
+    transition: color 0.2s ease;
+}
+
+.skill-description p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.skill-description.has-selection {
+    border-color: rgba(99, 144, 240, 0.6);
+    background: rgba(99, 144, 240, 0.12);
+}
+
 .trainer-header {
     display: flex;
     justify-content: space-between;
@@ -775,6 +812,26 @@ button {
 
     font-family: "Press Start 2P", monospace;
     font-size: 0.55rem;
+
+    transition: 0.2s ease;
+}
+
+.skill-badge:hover {
+    background: rgba(99, 144, 240, 0.2);
+    border-color: #6390F0;
+    transform: translateY(-2px);
+}
+
+.skill-badge.selected {
+    background: #6390F0;
+    color: #0d1117;
+    border-color: #6390F0;
+    box-shadow: 0 0 14px rgba(99, 144, 240, 0.3);
+}
+
+.skill-badge.selected::before {
+    content: "▶";
+    margin-right: 6px;
 }
 
 .trainer-about {

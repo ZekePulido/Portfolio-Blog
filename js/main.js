@@ -84,6 +84,7 @@ skillBadges.forEach(function(badge) {
         });
 
         badge.classList.add("selected");
+        skillDescription.classList.add("has-selection");
 
         const skill = skillInfo[selectedSkill];
 

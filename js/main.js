@@ -88,6 +88,10 @@ skillBadges.forEach(function(badge) {
 
         const skill = skillInfo[selectedSkill];
 
+        if (!skill) {
+            return;
+        }
+
         skillName.textContent = "▶ " + skill.name;
         skillText.textContent = skill.description;
             });
